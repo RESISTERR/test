@@ -46,6 +46,10 @@ PRODUCT_PACKAGES += \
     checkpoint_gc \
     otapreopt_script
 
+# Adaptive Charging
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/adaptivecharging.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/adaptivecharging.xml
+
 # AOSP Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
