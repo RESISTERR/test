@@ -116,6 +116,11 @@
         <fqname>@2.1::IGoodixFingerprintDaemonExt/default</fqname>
     </hal>
     <hal format="hidl">
+        <name>vendor.google.google_battery</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.1::IGoogleBattery/default</fqname>
+    </hal>
+    <hal format="hidl">
         <name>vendor.qti.hardware.alarm</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IAlarm/default</fqname>
