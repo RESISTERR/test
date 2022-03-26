@@ -160,6 +160,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libcamera2ndk_vendor \
     libgui_vendor \
+    libpiex_shim \
     libstdc++.vendor
 
 PRODUCT_PACKAGES += \
