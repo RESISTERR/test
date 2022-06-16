@@ -323,6 +323,9 @@
          auto-brightness adjustment setting. -->
      <fraction name="config_autoBrightnessAdjustmentMaxGamma">300.0%</fraction>
 
+    <!-- Enable burn protection in status bar -->
+    <bool name="config_statusBarBurnInProtection">true</bool>
+
     <!-- If this is true, the screen will come on when you unplug usb/power/whatever. -->
     <bool name="config_unplugTurnsOnScreen">true</bool>
 
