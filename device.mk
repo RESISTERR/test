@@ -255,6 +255,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0.vendor
 
+# Google Battery HAL
+PRODUCT_PACKAGES += \
+    vendor.google.google_battery@1.1
+
 # Health
 ifneq ($(wildcard vendor/qcom/opensource/healthd-ext/Android.bp),)
 PRODUCT_PACKAGES += \
