@@ -127,6 +127,7 @@ ro.frp.pst=/dev/block/bootdevice/by-name/frp
 # Graphics
 debug.hwui.renderer=skiagl
 debug.renderengine.backend=skiaglthreaded
+debug.sf.auto_latch_unsignaled=true
 debug.sf.disable_client_composition_cache=1
 debug.sf.enable_advanced_sf_phase_offset=1
 debug.sf.enable_gl_backpressure=1
