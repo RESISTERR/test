@@ -39,4 +39,7 @@
 
     <!-- Padding between signal cluster and battery icon -->
     <dimen name="signal_cluster_battery_padding">4dp</dimen>
+
+    <!-- The number of rows in the QuickSettings -->
+    <integer name="quick_settings_max_rows">4</integer>
 </resources>
