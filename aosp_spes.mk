@@ -16,6 +16,7 @@ $(call inherit-product, vendor/aosp/config/common.mk)
 
 # PixelOS Stuff
 TARGET_GAPPS_ARCH := arm64
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Product Specifics
 PRODUCT_NAME := aosp_spes
