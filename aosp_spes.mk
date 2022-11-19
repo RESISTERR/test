@@ -18,6 +18,7 @@ $(call inherit-product, vendor/aosp/config/common.mk)
 TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_USES_AOSP_RECOVERY := true
 
 # Product Specifics
 PRODUCT_NAME := aosp_spes
