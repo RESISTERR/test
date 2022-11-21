@@ -269,5 +269,4 @@ persist.vendor.sys.cnd.iwlan=1
 ro.telephony.iwlan_operation_mode=legacy
 
 # SoC
-ro.soc.manufacturer=Qualcomm
 ro.soc.model=SM6225
