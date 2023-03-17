@@ -404,13 +404,10 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
     XiaomiParts
 
-# Perf
-PRODUCT_PACKAGES += \
-    libqti-perfd-client
-
 # Platform
 TARGET_BOARD_PLATFORM := bengal
 TARGET_USES_AOSP_NFC := true
+TARGET_PROVIDES_XIAOMI_POWERHAL := true
 TARGET_COMMON_QTI_COMPONENTS := \
     adreno \
     bt \
