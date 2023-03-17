@@ -413,6 +413,7 @@ TARGET_BOARD_PLATFORM := bengal
 TARGET_USES_AOSP_NFC := true
 TARGET_COMMON_QTI_COMPONENTS := \
     adreno \
+    bt \
     perf
 
 # Power

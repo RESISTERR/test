@@ -68,8 +68,7 @@ BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
-BOARD_HAVE_BLUETOOTH := true
+TARGET_USE_QTI_BT_STACK := true
 
 # Board
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
@@ -260,15 +259,12 @@ BOARD_VNDK_VERSION := current
 NEED_AIDL_NDK_PLATFORM_BACKEND := true
 
 # Sepolicy
-include device/xiaomi/spes/sepolicy/vndr/SEPolicy.mk
+SELINUX_IGNORE_NEVERALLOWS := true
+include device/qcom/sepolicy_vndr/SEPolicy.mk
 
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
-ifdef CR_VERSION
-SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private-cr
-endif
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
-BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
 
 # WiFi
 BOARD_WLAN_DEVICE := qcwcn
