@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_spes.mk
+    $(LOCAL_DIR)/xperience_spes.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_spes-user \
-    aosp_spes-userdebug \
-    aosp_spes-eng
+    xperience_spes-user \
+    xperience_spes-userdebug \
+    xperience_spes-eng
