@@ -15,6 +15,13 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="hidl" optional="true"> 
+        <name>android.hardware.biometrics.fingerprint</name> 
+        <version>2.1</version> <interface>
+            <name>IBiometricFingerprint</name> 
+            <instance>default</instance> 
+        </interface>
+    </hal>
     <hal format="hidl" optional="true">
         <name>android.hardware.bluetooth</name>
         <version>1.0</version>
